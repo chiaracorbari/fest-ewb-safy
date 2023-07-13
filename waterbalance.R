@@ -1,3 +1,21 @@
+## The crop-energy-water balance FEST-EWB-SAFY model (Corbari et al., 2022) couples 
+## the distributed energy-water balance FEST-EWB (Corbari et al, 2011), which allows computing continuously
+## in time and distributed in space both soil moisture and evapotranspiration fluxes, 
+## and the SAFY (Duchemin et al, 2008), simple model for yield prediction and plant development
+
+## [1] Corbari, C., Ravazzani, G. and Mancini, M. (2011), A distributed thermodynamic model for energy and mass balance 
+## computation: FEST-EWB. Hydrol. Process., 25: 1443-1452. https://doi.org/10.1002/hyp.7910
+## [2] Corbari, C., Ben Charfi, I., Al Bitar, A., Skokovic, D., Sobrino, J.A., Perelli, C., Branca, G., Mancini, M. (2022),
+## A fully coupled crop-water-energy balance model based on satellite data for maize and tomato crops yield estimates: 
+##   The FEST-EWB-SAFY model, Agr. Wat. Man., 272: 107850. https://doi.org/10.1016/j.agwat.2022.107850\n
+## [3] Duchemin, B., Maisongrande, P., Boulet, G., Benhadj, I., 2008. A simple algorithm for yield estimates: 
+##   Evaluation for semi-arid irrigated winter wheat monitored with green leaf area index. Environ. Modell. Softw. 
+## 23(7), 876-892. https://doi.org/10.1016/j.envsoft.2007.10.003
+
+
+##  The code has been written by Nicola Paciolla and Chiara Corbari
+## chiara.corbari@polimi.it
+
 waterbalance = function(sm,sm2,et,ks,ks2,sm_res,sm_res2,sm_sat,sm_sat2,
                         Bci,Bci2,bubpress,fc,wp,dt,soil_depth,soil_depth2,CN2,
                         rain,gross_rain,net_rain,rain_flag,
